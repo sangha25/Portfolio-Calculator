@@ -49,3 +49,8 @@ for i in range(len(Symbols)):
                    color(change_1h),color(change_1d),color(change_7d)])
 
 print(table)
+total_profit = current_value / buy_value * 100 - 100
+dolars = current_value - buy_value
+
+print("Portfolio Value: %.2f   Total Profit %%: %.2f   Total Profit USD: %.2f" % (current_value,
+                                                                               total_profit,dolars))
