@@ -17,3 +17,7 @@ api = 'https://api.coinmarketcap.com/v2/listings/'
 data = requests.get(api).json()['data']
 
 symbols_id = [0] * len(Symbols)
+
+api = 'https://api.coinmarketcap.com/v2/ticker/'
+table = PrettyTable()
+table.field_names = ["Name","Quantity","Buy Price", 'Current Price ', "Profit %","Change 1h","Change 1d","Change 7d"]
